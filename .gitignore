@@ -1,0 +1,58 @@
+# ============================================
+# QD C++ Drill — .gitignore
+# ============================================
+
+# ---- macOS 系统垃圾 ----
+.DS_Store
+**/.DS_Store
+Thumbs.db
+
+# ---- 编辑器 / IDE ----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ---- C/C++ 编译产物(有后缀的)----
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+*.exe
+*.out
+*.dSYM/
+*.gch
+*.pch
+
+# ---- 编译产物(推荐:以后把二进制编到 build/ 目录)----
+build/
+bin/
+
+# ---- 当前项目已有的无后缀可执行文件 ----
+# 规则: 每个 day 目录下,和 xxx.cpp 同名但没后缀的,都是编译产物
+# 用 shell glob 匹配所有 dayXX/ 下没有后缀的文件
+week*/day*/hello
+week*/day*/crash
+week*/day*/try
+week*/day*/point
+week*/day*/const_pointer
+week*/day*/reference_demo
+week*/day*/swap_compare
+week*/day*/overload_demo
+week*/day*/my_namespace
+week*/day*/stopwatch
+week*/day*/rectangle
+week*/day*/int_array_rule_of_3
+week*/day*/deep_copy_fix
+week*/day*/simple_string_exercise
+week*/day*/smart_int_array_exercise
+week*/day*/unique_ptr_demo
+week*/day*/shared_ptr_demo
+week*/day*/shared_ptr_exercise
+week*/day*/weak_ptr_exercise
+week*/day*/my_unique_ptr
+week*/day*/move_demo
+week*/day*/template_demo
+week*/day*/my_shared_ptr_exercise
